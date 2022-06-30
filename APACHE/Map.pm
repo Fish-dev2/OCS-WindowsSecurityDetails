@@ -16,11 +16,8 @@ $DATA_MAP{winsecdetails} = {
 		writeDiff => 0,
 		cache => 0,
 		fields => {
-			VERSION => {},
-			MAJOR => {},
-			MINOR => {},
-			BUILD => {},
-			REVISION => {}
+            COLUMN_1 => {},
+            COLUMN_2 => {}
 	    }
 };
 1;
