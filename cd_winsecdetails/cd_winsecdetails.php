@@ -29,7 +29,7 @@ if (AJAX) {
 
 
 // print a title for the table
-print_item_header("A plugin example");
+print_item_header("Windows Security Details");
 
 
 
@@ -71,7 +71,31 @@ $tab_options['table_name'] = $table_name;
 echo open_form($form_name);
 $list_fields = array(
                     'column 1' => 'COLUMN_1',
-                    'column 2' => 'COLUMN_2');
+                    'AMEngineVersion' => 'AMEngineVersion',
+                    'AMProductVersion' => 'AMProductVersion',
+                    'AMRunningMode' => 'AMRunningMode',
+                    'AMServiceEnabled' => 'AMServiceEnabled',
+                    'AMServiceVersion' => 'AMServiceVersion',
+                    'AntispywareEnabled' => 'AntispywareEnabled',
+                    'AntispywareSignatureAge' => 'AntispywareSignatureAge',
+                    'AntispywareSignatureLastUpdated' => 'AntispywareSignatureLastUpdated',
+                    'AntispywareSignatureVersion' => 'AntispywareSignatureVersion',
+                    'AntivirusEnabled' => 'AntivirusEnabled',
+                    'AntivirusSignatureAge' => 'AntivirusSignatureAge',
+                    'AntivirusSignatureLastUpdated' => 'AntivirusSignatureLastUpdated',
+                    'AntivirusSignatureVersion' => 'AntivirusSignatureVersion',
+                    'BehaviorMonitorEnabled' => 'BehaviorMonitorEnabled',
+                    'IoavProtectionEnabled' => 'IoavProtectionEnabled',
+                    'IsTamperProtected' => 'IsTamperProtected',
+                    'NISEnabled' => 'NISEnabled',
+                    'NISEngineVersion' => 'NISEngineVersion',
+                    'NISSignatureAge' => 'NISSignatureAge',
+                    'NISSignatureLastUpdated' => 'NISSignatureLastUpdated',
+                    'NISSignatureVersion' => 'NISSignatureVersion',
+                    'OnAccessProtectionEnabled' => 'OnAccessProtectionEnabled',
+                    'RealTimeProtectionEnabled' => 'RealTimeProtectionEnabled',
+                    'TamperProtectionSource' => 'TamperProtectionSource',
+                );
 // columns to include at any time and default columns
 
 
