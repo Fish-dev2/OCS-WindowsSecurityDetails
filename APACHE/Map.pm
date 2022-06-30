@@ -16,11 +16,30 @@ $DATA_MAP{winsecdetails} = {
 		writeDiff => 0,
 		cache => 0,
 		fields => {
-			VERSION => {},
-			MAJOR => {},
-			MINOR => {},
-			BUILD => {},
-			REVISION => {}
+            AMEngineVersion => {},
+            AMProductVersion => {},
+            AMRunningMode => {},
+            AMServiceEnabled => {},
+            AMServiceVersion => {},
+            AntispywareEnabled => {},
+            AntispywareSignatureAge => {},
+            AntispywareSignatureLastUpdated => {},
+            AntispywareSignatureVersion => {},
+            AntivirusEnabled => {},
+            AntivirusSignatureAge => {},
+            AntivirusSignatureLastUpdated => {},
+            AntivirusSignatureVersion => {},
+            BehaviorMonitorEnabled => {},
+            IoavProtectionEnabled => {},
+            IsTamperProtected => {},
+            NISEnabled => {},
+            NISEngineVersion => {},
+            NISSignatureAge => {},
+            NISSignatureLastUpdated => {},
+            NISSignatureVersion => {},
+            OnAccessProtectionEnabled => {},
+            RealTimeProtectionEnabled => {},
+            TamperProtectionSource => {}
 	    }
 };
 1;
