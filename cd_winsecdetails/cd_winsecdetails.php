@@ -70,7 +70,6 @@ $tab_options['table_name'] = $table_name;
 
 echo open_form($form_name);
 $list_fields = array(
-                    'column 1' => 'COLUMN_1',
                     'AMEngineVersion' => 'AMEngineVersion',
                     'AMProductVersion' => 'AMProductVersion',
                     'AMRunningMode' => 'AMRunningMode',
@@ -94,7 +93,7 @@ $list_fields = array(
                     'NISSignatureVersion' => 'NISSignatureVersion',
                     'OnAccessProtectionEnabled' => 'OnAccessProtectionEnabled',
                     'RealTimeProtectionEnabled' => 'RealTimeProtectionEnabled',
-                    'TamperProtectionSource' => 'TamperProtectionSource',
+                    'TamperProtectionSource' => 'TamperProtectionSource'
                 );
 // columns to include at any time and default columns
 
