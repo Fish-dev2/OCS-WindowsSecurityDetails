@@ -24,7 +24,7 @@ if (!isset($protectedPost['SHOW'])) {
     $protectedPost['SHOW'] = 'NOSHOW';
 }
 
-$form_name = "winsecdetails";^
+$form_name = "winsecdetails";
 
 $table_name = $form_name;
 $tab_options = $protectedPost;
@@ -33,36 +33,36 @@ $tab_options['table_name'] = $table_name;
 
 echo open_form($form_name);
 $list_fields = array(
-                'AMENGINEVERSION' => 'AMENGINEVERSION',
-                'AMPRODUCTVERSION' => 'AMPRODUCTVERSION',
-                'AMRUNNINGMODE' => 'AMRUNNINGMODE',
-                'AMSERVICEENABLED' => 'AMSERVICEENABLED',
-                'AMSERVICEVERSION' => 'AMSERVICEVERSION',
-                'ANTISPYWAREENABLED' => 'ANTISPYWAREENABLED',
-                'ANTISPYWARESIGNATUREAGE' => 'ANTISPYWARESIGNATUREAGE',
-                'ANTISPYWARESIGNATURELASTUPDATED' => 'ANTISPYWARESIGNATURELASTUPDATED',
-                'ANTISPYWARESIGNATUREVERSION' => 'ANTISPYWARESIGNATUREVERSION',
-                'ANTIVIRUSENABLED' => 'ANTIVIRUSENABLED',
-                'ANTIVIRUSSIGNATUREAGE' => 'ANTIVIRUSSIGNATUREAGE',
-                'ANTIVIRUSSIGNATURELASTUPDATED' => 'ANTIVIRUSSIGNATURELASTUPDATED',
-                'ANTIVIRUSSIGNATUREVERSION' => 'ANTIVIRUSSIGNATUREVERSION',
-                'BEHAVIORMONITORENABLED' => 'BEHAVIORMONITORENABLED',
-                'IOAVPROTECTIONENABLED' => 'IOAVPROTECTIONENABLED',
-                'ISTAMPERPROTECTED' => 'ISTAMPERPROTECTED',
-                'NISENABLED' => 'NISENABLED',
-                'NISENGINEVERSION' => 'NISENGINEVERSION',
-                'NISSIGNATUREAGE' => 'NISSIGNATUREAGE',
-                'NISSIGNATURELASTUPDATED' => 'NISSIGNATURELASTUPDATED',
-                'NISSIGNATUREVERSION' => 'NISSIGNATUREVERSION',
-                'ONACCESSPROTECTIONENABLED' => 'ONACCESSPROTECTIONENABLED',
-                'REALTIMEPROTECTIONENABLED' => 'REALTIMEPROTECTIONENABLED',
-                'TAMPERPROTECTIONSOURCE' => 'TAMPERPROTECTIONSOURCE'
+        'AMEngineVersion' => 'AMENGINEVERSION',
+        'AMProductVersion' => 'AMPRODUCTVERSION',
+        'AMRunningMode' => 'AMRUNNINGMODE',
+        'AMServiceEnabled' => 'AMSERVICEENABLED',
+        'AMServiceVersion' => 'AMSERVICEVERSION',
+        'AntispywareEnabled' => 'ANTISPYWAREENABLED',
+        'AntispywareSignatureAge' => 'ANTISPYWARESIGNATUREAGE',
+        'AntispywareSignatureLastUpdated' => 'ANTISPYWARESIGNATURELASTUPDATED',
+        'AntispywareSignatureVersion' => 'ANTISPYWARESIGNATUREVERSION',
+        'AntivirusEnabled' => 'ANTIVIRUSENABLED',
+        'AntivirusSignatureAge' => 'ANTIVIRUSSIGNATUREAGE',
+        'AntivirusSignatureLastUpdated' => 'ANTIVIRUSSIGNATURELASTUPDATED',
+        'AntivirusSignatureVersion' => 'ANTIVIRUSSIGNATUREVERSION',
+        'BehaviorMonitorEnabled' => 'BEHAVIORMONITORENABLED',
+        'IoavProtectionEnabled' => 'IOAVPROTECTIONENABLED',
+        'IsTamperProtected' => 'ISTAMPERPROTECTED',
+        'NISEnabled' => 'NISENABLED',
+        'NISEngineVersion' => 'NISENGINEVERSION',
+        'NISSignatureAge' => 'NISSIGNATUREAGE',
+        'NISSignatureLastUpdated' => 'NISSIGNATURELASTUPDATED',
+        'NISSignatureVersion' => 'NISSIGNATUREVERSION',
+        'OnAccessProtectionEnabled' => 'ONACCESSPROTECTIONENABLED',
+        'RealTimeProtectionEnabled' => 'REALTIMEPROTECTIONENABLED',
+        'TamperProtectionSource' => 'TAMPERPROTECTIONSOURCE'
 );
 $list_col_cant_del = $list_fields;
 $default_fields = $list_fields;
 
 $sql = prepare_sql_tab($list_fields);
-$sql['SQL']  .= "FROM $table_name WHERE (hardware_id = $systemid)";
+$sql['SQL']  .= "FROM winsecdetails WHERE (hardware_id = $systemid)";
 
 array_push($sql['ARG'], $systemid);
 $tab_options['ARG_SQL'] = $sql['ARG'];
