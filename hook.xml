@@ -6,7 +6,7 @@
     <hook type="cdentry">
         <identifier>cd_winsecdetails</identifier>
         <translation>1234</translation>
-        <category>software</category>
+        <category>other</category>
         <available>winsecdetals</available>
     </hook>
 </hookstore>
