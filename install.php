@@ -18,6 +18,8 @@ function extension_install_winsecdetails()
 
     $commonObject -> sqlQuery(
         "CREATE TABLE winsecdetails (
+        ID INT(11) NOT NULL AUTO_INCREMENT,
+        HARDWARE_ID INT(11) NOT NULL,
         AMENGINEVERSION VARCHAR(255) DEFAULT NULL,
         AMPRODUCTVERSION VARCHAR(255) DEFAULT NULL,
         AMRUNNINGMODE VARCHAR(255) DEFAULT NULL,
